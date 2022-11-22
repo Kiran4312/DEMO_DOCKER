@@ -15,7 +15,7 @@ pipeline {
 
         sh '''
 
-          python3 --version
+          python3 demo.py
 
         '''
 

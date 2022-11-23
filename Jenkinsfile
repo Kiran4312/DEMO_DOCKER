@@ -22,6 +22,7 @@ pipeline {
 		  steps{
 		  echo "Tested all FIX branhes"
 		  }
+		  }
 	  }
 
 	 stage('hello') {

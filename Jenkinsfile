@@ -10,7 +10,7 @@ pipeline {
   stages {
 	  stage("checking and testing PR branches"){
 		  when {
-		  branch pr*
+		  branch "pr*"
 		  }
 		  steps{
 		  echo "Tested all PR branhes"
@@ -18,7 +18,7 @@ pipeline {
 	  }
 	  stage("checking and testing FIX branches"){
 		  when {
-		  branch fix*
+		  branch "fix*"
 		  }
 		  steps{
 		  echo "Tested all FIX branhes"

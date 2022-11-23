@@ -15,7 +15,7 @@ pipeline {
 
         sh '''
 
-          python3 demo.py
+          python3 Electrobit.py
 
         '''
 

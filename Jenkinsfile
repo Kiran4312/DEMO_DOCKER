@@ -15,8 +15,7 @@ pipeline {
 		  steps{
 		  echo "Tested all PR branhes"
 		  }
-	  }
-	  stage("checking and testing FIX branches"){
+		  stage("checking and testing FIX branches"){
 		  when {
 		  branch "fix*"
 		  }
@@ -24,6 +23,7 @@ pipeline {
 		  echo "Tested all FIX branhes"
 		  }
 	  }
+
 	 stage('hello') {
 		  steps {
 			sh '''

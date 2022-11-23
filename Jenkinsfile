@@ -8,19 +8,32 @@ pipeline {
   }
 
   stages {
+	  stage("checking and testing PR branches"){
+		  when {
+		  branch "pr*"
+		  }
+		  steps{
+		  echo "Tested all PR branhes"
+		  }
+	  }
+	  stage("checking and testing FIX branches"){
+		  when {
+		  branch "fix*"
+		  }
+		  steps{
+		  echo "Tested all FIX branhes"
+		  }
+	  }
+	 stage('Hello') {
+		  steps {
+			sh '''
 
-    stage('Hello') {
+			  python3 demo.py
 
-      steps {
+			'''
 
-        sh '''
+		  }
 
-          python3 demo.py
-
-        '''
-
-      }
-
-    }
+		}
   }
  }

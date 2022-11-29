@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM ubuntu:22.04.1
+FROM ubuntu:20.04
 
 # Install.
 RUN \
